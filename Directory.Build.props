@@ -1,0 +1,23 @@
+<Project>
+	<PropertyGroup>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<AnalysisMode>All</AnalysisMode>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="SonarAnalyzer.CSharp"
+						  Version="9.0.0.68202"
+						  PrivateAssets="all"
+						  Condition="$(MSBuildProjectExtension) == '.csproj'"/>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+							  Version="8.0.1"
+							  PrivateAssets="all"
+							  Condition="$(MSBuildProjectExtension) == '.csproj'"/>
+		<PackageReference Include="MediatR"
+						  Version="12.4.0"
+						  PrivateAssets="all"
+						  Condition="$(MSBuildProjectExtension) == '.csproj'"/>
+	</ItemGroup>
+</Project>
