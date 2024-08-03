@@ -1,4 +1,9 @@
+using Api;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddCleanArchiLayers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
