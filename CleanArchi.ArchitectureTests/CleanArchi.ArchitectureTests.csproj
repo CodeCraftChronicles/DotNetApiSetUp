@@ -25,15 +25,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-    <ProjectReference Include="..\CleanArchi.Api\CleanArchi.Api.csproj" />
-    <ProjectReference Include="..\CleanArchi.Application\CleanArchi.Application.csproj" />
-    <ProjectReference Include="..\CleanArchi.Domain\CleanArchi.Domain.csproj" />
-    <ProjectReference Include="..\CleanArchi.Infrastructure\CleanArchi.Infrastructure.csproj" />
-    <ProjectReference Include="..\CleanArchi.Presentation\CleanArchi.Presentation.csproj" />
-  </ItemGroup>
+	  <ProjectReference Include="..\TestShared\TestShared.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Using Include="NUnit.Framework" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<Using Include="Xunit"/>
+	</ItemGroup>
 </Project>

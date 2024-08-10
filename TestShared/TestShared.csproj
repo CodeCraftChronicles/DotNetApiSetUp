@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Events\" />
-    <Folder Include="ValuesObjects\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CleanArchi.Application\CleanArchi.Application.csproj" />
+    <ProjectReference Include="..\CleanArchi.Domain\CleanArchi.Domain.csproj" />
+    <ProjectReference Include="..\CleanArchi.Infrastructure\CleanArchi.Infrastructure.csproj" />
+    <ProjectReference Include="..\CleanArchi.Presentation\CleanArchi.Presentation.csproj" />
   </ItemGroup>
 
 </Project>
